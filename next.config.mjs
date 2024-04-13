@@ -7,7 +7,8 @@ const nextConfig = {
         {
             hostname: 'github.com'
         },
-        {hostname:'raw.githubusercontent.com'}
+        {hostname:'raw.githubusercontent.com'},
+        {hostname: "utfs.io"}
     ],
     },
 };
