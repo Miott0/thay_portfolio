@@ -2,6 +2,8 @@
 
 import { usePathname } from 'next/navigation';
 import React, { useState } from 'react';
+import Image from 'next/image';
+import { Logo } from '@/icons/Logo';
 
 
 function Navbar() {
@@ -9,6 +11,7 @@ function Navbar() {
   const pathname = usePathname();
 
   const isPortPage = pathname === '/';
+  const isProjectPage = /^\/projects\/\d+$/.test(pathname);
   const isWhoPage = pathname === '/whoami';
   const isContPage = pathname === '/contact';
 
@@ -23,18 +26,25 @@ function Navbar() {
     <nav className={` px-[2rem] py-7 ${isWhoPage ? 'bg-white' : 'bg-black'}`} >
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <div className="flex items-center">
-          <span className="text-white text-lg font-bold">Company Name</span>
-        </div>
+        <Logo width={"173px"} height={"60px"} fill={isWhoPage ? '#000000' : '#ffffff'}/>
+        {/* <div className="LOGO">
+          <Image 
+              src={"/Th - B.svg"}
+              alt={"foto de apresentaç[ão Thaynná"}
+              className="w-[173px] h-[60px]"
+              width={600}
+              height={600}
+            />
+        </div> */}
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-4">
-          <a href="/" className={isPortPage ? 'text-pink-icon' : 'text-white'}>Portfólio</a>
+          <a href="/" className={isPortPage || isProjectPage? 'text-pink-icon':"text-black"}>Portfólio</a>
           <a href="/whoami" className={isWhoPage ? 'text-pink-icon' : 'text-white'}>Quem sou</a>
         </div>
 
         {/* HAMBUGER MENU */}
-        <div className="HAMBURGER-ICON space-y-1" onClick={toggleMenu}>
+        <div className="HAMBURGER-ICON space-y-1 sm:hidden" onClick={toggleMenu}>
           <span className={`block h-1 w-8 rounded-full ${isWhoPage ? 'bg-black' : 'bg-white'}`}></span>
           <span className={`block h-1 w-8 rounded-full ${isWhoPage ? 'bg-black' : 'bg-white'}`}></span>
           <span className={`block h-1 w-8 rounded-full ${isWhoPage ? 'bg-black' : 'bg-white'}`}></span>
@@ -54,12 +64,9 @@ function Navbar() {
           </button>
 
           <div className="flex flex-col justify-center items-center h-full text-4xl gap-y-16">
-            <a href="/" className={isPortPage ? 'text-pink-icon' : 'text-white'}>Portfólio</a>
+            <a href="/" className={isPortPage || isProjectPage? 'text-pink-icon':"text-black"}>Portfólio</a>
             <a href="/whoami" className={isWhoPage ? 'text-pink-icon' : 'text-white'}>Quem sou</a>
           </div>
-          {/* <div className="absolute top-1/2 right-[-2rem] transform -translate-x-1/2 -translate-y-1/2 bg-gray-800 rounded-full p-2">
-            <button onClick={toggleMenu} className="text-red-500"> aaaa</button>
-          </div> */}
         </div>
       )}
 

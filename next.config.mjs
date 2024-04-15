@@ -4,12 +4,10 @@ import { hostname } from 'os';
 const nextConfig = {
     images: {
         remotePatterns: [
-        {
-            hostname: 'github.com'
-        },
-        {hostname:'raw.githubusercontent.com'},
-        {hostname: "utfs.io"}
-    ],
+            {hostname: 'github.com'},
+            {hostname:'raw.githubusercontent.com'},
+            {hostname: "utfs.io"}
+        ],
     },
 };
 
