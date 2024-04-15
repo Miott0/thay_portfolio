@@ -11,6 +11,7 @@ export function CardList() {
           Jobs.map(art => (
             <Card
               key={art.name}
+              id={art.id}
               name={art.name}
               mainPhoto={art.mainPhoto}
               photoList={art.photoList}

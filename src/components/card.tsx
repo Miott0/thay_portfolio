@@ -1,9 +1,11 @@
 'use client'
 
 import React, { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation'
 import Image from 'next/image';
 
 interface JobProps {
+    id: number
     name: string;
     mainPhoto: string;
     photoList: string[];
@@ -11,7 +13,9 @@ interface JobProps {
 
 
 export function Card(job: JobProps) {
+    const router = useRouter()
     const [expanded, setExpanded] = useState(false);
+
 
     useEffect(() => {
         if (expanded) {
@@ -31,15 +35,16 @@ export function Card(job: JobProps) {
     };
 
     return (
+
+        /* CARD */
         <div className="relative">
-            <div className='relative group'>
+            <div className='relative group ' /* onClick={toggleExpanded} */ onClick={() => router.push(`/projects/${job.id}`)}>
                 <div className=" w-[368px] h-[285px] mb-7 relative">
 
                     <Image
                         src={job.mainPhoto}
                         alt={job.name}
                         className="w-full cursor-pointer rounded-md"
-                        onClick={toggleExpanded}
                         width={600}
                         height={600}
                     />
@@ -50,13 +55,13 @@ export function Card(job: JobProps) {
                 </div>
             </div>
 
+            {/* PROJETO EXPANDIDO */}
             {expanded && (
                 <div className="fixed inset-0 flex justify-around  bg-black bg-opacity-50 z-50 ">
                     <div className="max-w-lg relative mt-28 overflow-y-auto">
                         <button
                             onClick={toggleExpanded}
                             className="fixed z-10  text-pink-icon text-4xl top-[20%] right-5"
-                            
                         >
                             X
                         </button>
