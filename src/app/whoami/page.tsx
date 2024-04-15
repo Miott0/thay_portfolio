@@ -68,7 +68,7 @@ export default function WhoAmI() {
 
 
         <div className="FINAL-SECTION flex flex-col gap-4 ">
-          
+
           <div className='HABILIDADES flex flex-col text-white'>
             <div>
               <p className='text-xl font-ligth mb-[8px]'>Habilidades</p>
@@ -78,9 +78,8 @@ export default function WhoAmI() {
             <div className='flex gap-4'>
               {/* MAPPING HABILIDADES */}
               {Habilidades.map(habl => (
-                <div className=''>
+                <div key={habl.id} className=''>
                   <Image
-                    key={habl.id}
                     src={habl.imgPath}
                     alt={habl.name}
                     width={57}
@@ -102,9 +101,8 @@ export default function WhoAmI() {
             <div className='flex gap-4'>
               {/* MAPPING HOBBIES */}
               {Hobbies.map(habl => (
-                <div className=''>
+                <div key={habl.id} className=''>
                   <Image
-                    key={habl.id}
                     src={habl.imgPath}
                     alt={habl.name}
                     width={57}
@@ -127,20 +125,20 @@ export default function WhoAmI() {
 
             <div className='flex gap-4'>
               {/* MAPPING HABILIDADES */}
-        
-                <div className='flex gap-4'>
-                  <Image
-                    src={"/IFF-15.svg"}
-                    alt={"Icone Instituto Federal Fluminense"}
-                    width={57}
-                    height={58}
-                  />
-                  <div className='mt-[6px] text-[10px]'>
-                    <p className=''>Alan Rene Lopes Neves</p>
-                    <p>Coordenador do curso de Design Gráﬁco</p>
-                    <p>alan.r.neves@gmail.com</p>
-                  </div>
+
+              <div className='flex gap-4'>
+                <Image
+                  src={"/IFF-15.svg"}
+                  alt={"Icone Instituto Federal Fluminense"}
+                  width={57}
+                  height={58}
+                />
+                <div className='mt-[6px] text-[10px]'>
+                  <p className=''>Alan Rene Lopes Neves</p>
+                  <p>Coordenador do curso de Design Gráﬁco</p>
+                  <p>alan.r.neves@gmail.com</p>
                 </div>
+              </div>
             </div>
           </div>
 
