@@ -80,6 +80,7 @@ export default function WhoAmI() {
               {Habilidades.map(habl => (
                 <div className=''>
                   <Image
+                    key={habl.id}
                     src={habl.imgPath}
                     alt={habl.name}
                     width={57}
@@ -103,6 +104,7 @@ export default function WhoAmI() {
               {Hobbies.map(habl => (
                 <div className=''>
                   <Image
+                    key={habl.id}
                     src={habl.imgPath}
                     alt={habl.name}
                     width={57}
