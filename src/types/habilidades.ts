@@ -16,7 +16,7 @@ export const Habilidades = [
     },
     {
         id: 4,
-        name: "InDesign",
-        imgPath: "/Id.svg"
+        name: "Ilustrator",
+        imgPath: "/Ai.svg"
     },
 ]
