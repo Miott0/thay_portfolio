@@ -2,24 +2,49 @@ export const Jobs = [
     {
         id: 1,
         name: "Revista",
-        mainPhoto: "https://raw.githubusercontent.com/Miott0/LP-Thaynna/main/Lp-Thaynná/img/5.png",
+        mainPhoto: "https://utfs.io/f/6496f322-afad-43f3-b3c6-f7835798850f-oqj5nm.webp",
         photoList: [
-            "https://raw.githubusercontent.com/Miott0/LP-Thaynna/main/Lp-Thaynná/img/5.png", 
-            "https://raw.githubusercontent.com/Miott0/LP-Thaynna/main/Lp-Thaynná/img/1.png",
-            "https://utfs.io/f/f498f2a3-856a-43d6-b987-838f6d186f55-vot64f.png",
-            "https://utfs.io/f/f498f2a3-856a-43d6-b987-838f6d186f55-vot64f.png",                
-            "https://utfs.io/f/f498f2a3-856a-43d6-b987-838f6d186f55-vot64f.png",
-            "https://utfs.io/f/f498f2a3-856a-43d6-b987-838f6d186f55-vot64f.png",
-            "https://utfs.io/f/f498f2a3-856a-43d6-b987-838f6d186f55-vot64f.png"
+            "https://utfs.io/f/6496f322-afad-43f3-b3c6-f7835798850f-oqj5nm.webp",
+            
         ]
     },
     {
         id: 2,
         name: "Livro",
-        mainPhoto: "https://raw.githubusercontent.com/Miott0/LP-Thaynna/main/Lp-Thaynná/img/7.png",
+        mainPhoto: "https://utfs.io/f/005da674-232f-48b6-b3aa-e190a24decdd-j93t0m.webp",
         photoList: [
-            "https://raw.githubusercontent.com/Miott0/LP-Thaynna/main/Lp-Thaynná/img/7.png", 
-            "https://raw.githubusercontent.com/Miott0/LP-Thaynna/main/Lp-Thaynná/img/8.png"
+            "/Images/Iracema_1.png",
+            "/Images/Iracema_2.png",
+            "/Images/Iracema_3.png",
+            "/Images/Iracema_5.4.png",
+            "/Images/Iracema_4.png",
+            "/Images/Iracema_5.1.png",
+            "/Images/Iracema_5.2.png",
+            "/Images/Iracema_5.3.png",
+            
+            "/Images/Iracema_6.png",
         ]
     },
+    {
+        id: 3,
+        name: "Panfleto",
+        mainPhoto: "https://utfs.io/f/ff9a4b91-2b60-4561-b04b-8add9f3b4752-2gr67i.webp",
+        photoList: [
+            "https://utfs.io/f/ff9a4b91-2b60-4561-b04b-8add9f3b4752-2gr67i.webp"
+        ]
+    },
+
+    {
+        id: 4,
+        name: "Jornal",
+        mainPhoto: "https://utfs.io/f/9971478f-e4da-4031-9d82-75975e20d8d4-y8nqgk.webp",
+        photoList: [
+            "https://utfs.io/f/9971478f-e4da-4031-9d82-75975e20d8d4-y8nqgk.webp"
+        ]
+    },
+
+
+    
 ]
+
+

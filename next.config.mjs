@@ -6,8 +6,11 @@ const nextConfig = {
         remotePatterns: [
             {hostname: 'github.com'},
             {hostname:'raw.githubusercontent.com'},
-            {hostname: "utfs.io"}
+            {hostname: "utfs.io"},
+
         ],
+
+        formats: ['image/webp','image/avif'],
     },
 };
 

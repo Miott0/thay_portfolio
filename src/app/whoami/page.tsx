@@ -1,11 +1,11 @@
-"use client"
 import { Habilidades } from '@/types/habilidades';
 import { Hobbies } from '@/types/hobbies';
 import Image from 'next/image';
+import  FotoApresentacao  from '/public/Foto_Perfil-13.webp';
 
 export default function WhoAmI() {
 
-  const birthDate = new Date(1997, 6, 9); // A data de nascimento de Thaynná é 7 de abril de 1999
+  const birthDate = new Date(1997, 6, 9); // A data de nascimento de Thaynná é 9/6/97
   const today = new Date();
   let age = today.getFullYear() - birthDate.getFullYear();
   const monthDifference = today.getMonth() - birthDate.getMonth();
@@ -15,15 +15,15 @@ export default function WhoAmI() {
   }
 
   return (
-    <main className="flex bg-black min-h-screen flex-col items-center justify-between pt-11 pb-10 px-10  sm:p-24 ">
-      <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-4">
-        <div className="FOTO-APRESENTACAO mb-16 flex items-center justify-center">
+    <main className="flex bg-black min-h-screen flex-col items-center justify-between pt-4 pb-10 px-10  sm:p-24 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2">
+        <div className="FOTO-APRESENTACAO mb-6 flex items-center justify-center">
           <Image
-            src={"/FotoApresentacao.svg"}
+            src={FotoApresentacao}
             alt={"foto de apresentação Thaynná"}
             className="w-[21rem] h-[30rem]"
-            width={600}
-            height={600}
+            width={1080}
+            height={1080}
           />
         </div>
 
@@ -32,9 +32,9 @@ export default function WhoAmI() {
             <Image
               src={"/Ola!.svg"}
               alt={"Imagem Olá!"}
-              className="w-44 h-16 mb-11 "
-              width={600}
-              height={600}
+              className="w-44 h-16 mb-6"
+              width={240}
+              height={240}
             />
 
             <div className='TEXT GRANDE PRA KRL flex flex-col text-white gap-5 text-left text-xs leading-5'>
@@ -52,11 +52,9 @@ export default function WhoAmI() {
                 que me permitem colaborar efetivamente com os colegas e compartilhar conhecimentos de forma clara. Acredito na
                 importância de ouvir as necessidades do cliente e traduzi-las em soluções criativas e impactantes.
               </div>
-
               <div className='QUARTO-PARAGRAFO'>
                 Sou uma profissional comprometida em oferecer um design gráfico de alta qualidade, que combina estética visual com funcionalidade.
               </div>
-
               <div className='QUINTO-PARAGRAFO'>
                 Empolgada para enfrentar novos desafios e expandir minha carreira na área do design.
                 Com minha paixão pelo campo e minha experiência sólida, estou pronta para contribuir para
@@ -67,8 +65,7 @@ export default function WhoAmI() {
         </div>
 
 
-        <div className="FINAL-SECTION flex flex-col gap-4 ">
-
+        <div className="FINAL-SECTION flex md:items-center justify-center mt-8 flex-col gap-4  ">
           <div className='HABILIDADES flex flex-col text-white'>
             <div>
               <p className='text-xl font-ligth mb-[8px]'>Habilidades</p>
@@ -141,7 +138,6 @@ export default function WhoAmI() {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </main>
