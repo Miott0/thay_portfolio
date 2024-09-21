@@ -5,13 +5,12 @@ export const Jobs = [
         mainPhoto: "https://utfs.io/f/6496f322-afad-43f3-b3c6-f7835798850f-oqj5nm.webp",
         photoList: [
             "https://utfs.io/f/6496f322-afad-43f3-b3c6-f7835798850f-oqj5nm.webp",
-            
         ]
     },
     {
         id: 2,
         name: "Livro",
-        mainPhoto: "https://utfs.io/f/005da674-232f-48b6-b3aa-e190a24decdd-j93t0m.webp",
+        mainPhoto: "/Images/Iracema_2.png",
         photoList: [
             "/Images/Iracema_1.png",
             "/Images/Iracema_2.png",
@@ -21,7 +20,6 @@ export const Jobs = [
             "/Images/Iracema_5.1.png",
             "/Images/Iracema_5.2.png",
             "/Images/Iracema_5.3.png",
-            
             "/Images/Iracema_6.png",
         ]
     },
